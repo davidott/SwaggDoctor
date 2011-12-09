@@ -1,5 +1,9 @@
 Swaggdoctor::Application.routes.draw do
 
+  root :to => 'home#home'
+  
+  resources :photos
+
   resources :users
 
   # The priority is based upon order of creation:
